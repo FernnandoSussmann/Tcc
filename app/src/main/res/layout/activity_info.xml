@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/layout">
+
+        <TextView android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_temp"
+            style="@style/text"
+            />
+
+        <TextView android:id="@+id/max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_value"
+            android:layout_toRightOf="@+id/label1"
+            android:layout_toEndOf="@+id/label1"
+            style="@style/text"
+            />
+
+        <TextView android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min_temp"
+            android:layout_below="@+id/label1"
+            style="@style/text"
+            />
+
+        <TextView android:id="@+id/min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_value"
+            android:layout_toRightOf="@+id/label2"
+            android:layout_toEndOf="@+id/label2"
+            android:layout_below="@+id/label1"
+            style="@style/text" />
+
+        <TextView android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usage_time"
+            android:layout_below="@+id/label2"
+            style="@style/text"
+            />
+
+        <TextView android:id="@+id/usage_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_value"
+            android:layout_toRightOf="@+id/label3"
+            android:layout_toEndOf="@+id/label3"
+            android:layout_below="@+id/label2"
+            style="@style/text"
+            />
+
+        <Button
+            android:id="@+id/ret_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ret"
+            android:layout_below="@+id/usage_time"
+            style="@style/buttons"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

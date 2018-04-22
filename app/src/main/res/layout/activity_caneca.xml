@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CanecaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="16dp"
+        style="@style/layout">
+
+        <Button
+            android:id="@+id/barplot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/barplot_button"
+            tools:ignore="NotSibling"
+            style="@style/buttons"
+            android:onClick="abrirTela"/>
+
+        <Button
+            android:id="@+id/historical_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/barplot_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/historical_info"
+            tools:ignore="NotSibling"
+            style="@style/buttons"
+            android:onClick="abrirTela"/>
+
+        <Button android:id="@+id/how_to_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_use"
+            android:layout_below="@+id/barplot_button"
+            android:layout_margin="10dp"
+            style="@style/buttons"
+            android:onClick="abrirTela"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
