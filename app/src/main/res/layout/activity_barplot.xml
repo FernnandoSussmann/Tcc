@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarPlotActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ret"
         android:layout_below="@+id/barplot"
+        android:onClick="voltaTelaInicial"
         style="@style/buttons"/>
     </RelativeLayout>
 
