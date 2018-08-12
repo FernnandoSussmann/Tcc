@@ -71,4 +71,20 @@ public class CanecaDao {
 
         return canecaList;
     }
+
+    public ArrayList<String> getDates(InputStream is) throws IOException, ParseException {
+        String str;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        ArrayList<String> datas = new ArrayList<String>();
+
+        if (is != null) {
+            while ((str = reader.readLine()) != null) {
+                String[] arrStr = str.split(";");
+                    datas.add(arrStr[0]);
+                }
+            }
+
+        return datas;
+    }
 }
