@@ -16,15 +16,14 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_howtouse);
+
         mainIntent = new Intent(this, CanecaActivity.class);
 
         btnRetorno = (Button) findViewById(R.id.ret_button);
     }
 
     public void voltaTelaInicial(View v){
-        switch (v.getId()){
-            case R.id.ret_button:
-                startActivity(mainIntent);
-        }
+            startActivity(mainIntent);
+            finishActivity(0);
     }
 }

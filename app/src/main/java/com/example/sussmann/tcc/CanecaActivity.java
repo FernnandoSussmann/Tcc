@@ -19,6 +19,7 @@ public class CanecaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caneca);
+
         htuIntent = new Intent(this,HowToUseActivity.class);
         bpIntent = new Intent(this, BarPlotActivity.class);
         iIntent = new Intent(this,InfoActivity.class);

@@ -11,17 +11,27 @@
         android:layout_height="match_parent"
         style="@style/layout">
 
-    <ImageView android:id="@+id/barplot"
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/chart_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bar"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/barplot"
+        android:text="@string/chart"
+        android:onClick="geraGrafico"
+        style="@style/buttons"/>
 
     <Button
         android:id="@+id/ret_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ret"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/barplot"
         android:onClick="voltaTelaInicial"
         style="@style/buttons"/>

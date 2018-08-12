@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Estatisticas da caneca</string>
-    <string name="barplot_button">Temperatura\n média\n por dia</string>
+    <string name="barplot_button">Temperatura\n por dia</string>
     <string name="historical_info">Informações\n de uso</string>
     <string name="how_to_use">Como utilizar o dispositivo</string>
     <string name="ret">Voltar</string>
@@ -8,5 +8,6 @@
     <string name="min_temp">Temperatura minima: </string>
     <string name="usage_time">Tempo de uso: </string>
     <string name="empty_value">0</string>
+    <string name="chart">Gerar grafico</string>
     <string name="how_to_use_info">Para utilizar a caneca é necessário que as baterias estejam carregadas. Feito isso aproxime uma fonte de calor ou frio no sensor para que a caneca esquente ou esfrie.</string>
 </resources>
